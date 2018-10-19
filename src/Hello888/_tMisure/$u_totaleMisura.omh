@@ -1,0 +1,64 @@
+Calculate lvMisuraRow.Altezza as 0
+Calculate lvMisuraRow.Larghezza as 0
+Calculate lvMisuraRow.Spessore as 0
+Calculate lvMisuraRow.PartiSimili as 0
+
+Do lvMisuraRow.$totaleMisura(kTrue) Returns lnResult
+Do ioTAP.$is_number(lnResult,0,'Con "ignora 0" attivo il risultato dovrebbe essere 1 se c''è uno 0')
+
+Calculate lvMisuraRow.Altezza as 0
+Calculate lvMisuraRow.Larghezza as 0
+Calculate lvMisuraRow.Spessore as 0
+Calculate lvMisuraRow.PartiSimili as 1
+
+Do lvMisuraRow.$totaleMisura(kTrue) Returns lnResult
+Do ioTAP.$is_number(lnResult,1,'Con "ignora 0" attivo il risultato dovrebbe essere 1 se c''è uno 0')
+
+Calculate lvMisuraRow.Altezza as 0
+Calculate lvMisuraRow.Larghezza as 0
+Calculate lvMisuraRow.Spessore as 0
+Calculate lvMisuraRow.PartiSimili as 1
+Do lvMisuraRow.$totaleMisura(kFalse) Returns lnResult
+Do ioTAP.$is_number(lnResult,0,'Con "ignora 0" non attivo il risultato dovrebbe essere 0 se c''è uno 0')
+
+Calculate lvMisuraRow.Altezza as 10
+Calculate lvMisuraRow.Larghezza as 1/7
+Calculate lvMisuraRow.Spessore as 2
+Calculate lvMisuraRow.PartiSimili as 3
+Calculate lnExpected as 10*(1/7)*2*3
+Do lvMisuraRow.$totaleMisura() Returns lnResult
+Do ioTAP.$is_number(lnResult,lnExpected,'Tutti gli elementi vengono moltiplicati correttamente')
+Do lvMisuraRow.$totaleMisura(kFalse) Returns lnResult
+Do ioTAP.$is_number(lnResult,lnExpected,'Tutti gli elementi vengono moltiplicati correttamente, anche senza ignorare gli 0')
+
+Calculate lvMisuraRow.Altezza as 10
+Calculate lvMisuraRow.Larghezza as 1/3
+Calculate lvMisuraRow.Spessore as 0
+Calculate lvMisuraRow.PartiSimili as 3
+Calculate lnExpected as 10*(1/3)*1*3
+Do lvMisuraRow.$totaleMisura() Returns lnResult
+Do ioTAP.$is_number(lnResult,lnExpected,'Tutti gli elementi vengono moltiplicati correttamente anche se uno vale 0 (con ignore0)')
+
+
+Calculate lvMisuraRow.Altezza as 10
+Calculate lvMisuraRow.Larghezza as 1/3
+Calculate lvMisuraRow.Spessore as 0
+Calculate lvMisuraRow.PartiSimili as 3
+Calculate lnExpected as 0
+Do lvMisuraRow.$totaleMisura(kFalse) Returns lnResult
+Do ioTAP.$is_number(lnResult,lnExpected,'Tutti gli elementi vengono moltiplicati correttamente anche se uno vale 0 (senza ignore0)')
+
+;  ------
+Do lvMisureList.$add(1,1,1,1)
+Do lvMisureList.$add(1,0,0,1)
+Do lvMisureList.$add(1,8,1/7,0)
+
+Do lvMisureList.$totaleMisura(kTrue) Returns lnRes
+Calculate lnExpected as 1+1+(1*8*1/7)
+Do ioTAP.$is_number(lnRes,lnExpected,'Il totale di una lista è la somma dei totali')
+
+Do lvMisureList.$add(0,0,0,0)
+Do lvMisureList.$totaleMisura(kTrue) Returns lnRes
+Do ioTAP.$is_number(lnRes,lnExpected,'Una misura vuota non viene conteggiata nella lista (con ignora0)')
+Do lvMisureList.$totaleMisura(kFalse) Returns lnRes
+Do ioTAP.$is_number(lnRes,1,'Una misura vuota non viene conteggiata nella lista (senza ignora0)')

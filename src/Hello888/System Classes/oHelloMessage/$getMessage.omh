@@ -1,0 +1,2 @@
+Calculate lcMessage as con('Hello ',pcCompanyName,' from O$ ',pcOmnisVersion)
+Quit method lcMessage

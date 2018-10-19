@@ -2,7 +2,7 @@
 	{
 		"name": "$construct",
 		"ident": 0,
-		"order": 16384,
+		"order": 1,
 		"pvardefs": [
 
 		],
@@ -11,15 +11,14 @@
 		]
 	},
 	{
-		"name": "$destruct",
+		"name": "$_getCLIObjectClass",
 		"ident": 1,
-		"order": 16385,
+		"order": 2,
 		"pvardefs": [
 
 		],
 		"lvardefs": [
 
-		],
-		"empty": true
+		]
 	}
 ]

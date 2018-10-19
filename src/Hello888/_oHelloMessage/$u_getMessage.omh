@@ -1,0 +1,8 @@
+Calculate lcCompanyName as 'A'
+Calculate lcOmnisVersion as '888'
+
+Calculate lcExpected as 'Hello A from O$ 888'
+
+Do iorMock.$getMessage(lcCompanyName,lcOmnisVersion) Returns lcResult
+
+Do ioTAP.$is_char(lcResult,lcExpected,'Messaggio di benvenuto generato correttamente')

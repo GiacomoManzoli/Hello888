@@ -1,4 +1,0 @@
-Calculate lcCompanyName as sys(3)
-Calculate lcOmnisVersion as sys(1)
-Calculate lcMessage as con('Hello ',lcCompanyName,' from O$ ',lcOmnisVersion)
-Quit method lcMessage

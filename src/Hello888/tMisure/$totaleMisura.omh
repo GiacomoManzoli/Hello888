@@ -1,0 +1,25 @@
+If $cinst.$type=kRow
+	If $cinst.$isEmpty()
+		Quit method 0
+	End If
+	If pbIgnoreZero
+		Calculate lnAltezza as pick($cinst.Altezza<>0,1,$cinst.Altezza)     ;; Se 0 -> 1, altrimenti X
+		Calculate lnLarghezza as pick($cinst.Larghezza<>0,1,$cinst.Larghezza)     ;; Se 0 -> 1, altrimenti X
+		Calculate lnSpessore as pick($cinst.Spessore<>0,1,$cinst.Spessore)     ;; Se 0 -> 1, altrimenti X
+		Calculate lnPartiSimili as pick($cinst.PartiSimili<>0,1,$cinst.PartiSimili)     ;; Se 0 -> 1, altrimenti X
+	Else
+		Calculate lnAltezza as $cinst.Altezza
+		Calculate lnLarghezza as $cinst.Larghezza
+		Calculate lnSpessore as $cinst.Spessore
+		Calculate lnPartiSimili as $cinst.PartiSimili
+	End If
+	Calculate lnResult as lnAltezza*lnSpessore*lnLarghezza*lnPartiSimili
+Else     ;; kList
+	Calculate lnResult as 0
+	For lnLine from 1 to $cinst.$linecount step 1
+		Do lvCurrentRow.$definefromsqlclass($cclass().$name)
+		Do lvCurrentRow.$assignrow($cinst.[lnLine],kTrue)
+		Calculate lnResult as lnResult+lvCurrentRow.$totaleMisura(pbIgnoreZero)
+	End For
+End If
+Quit method lnResult

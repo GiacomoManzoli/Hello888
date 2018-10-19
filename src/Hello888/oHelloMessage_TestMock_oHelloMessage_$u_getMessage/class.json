@@ -1,6 +1,7 @@
 {
 	"classtype": "kObjectclass",
-	"internalversion": 4,
+	"internalversion": 1,
+	"superclass": "oHelloMessage",
 	"designtaskname": "Startup_Task",
 	"cvardefs": [
 
@@ -12,13 +13,13 @@
 		"collectperformancedata": false,
 		"componenticon": 0,
 		"componenttype": "kCompStoreHidden",
-		"createdate": "2018-10-14 11:52:44",
+		"createdate": "2018-10-18 22:29:01",
 		"desc": "",
 		"editor": "",
 		"editordata": "",
-		"external": true,
+		"external": false,
 		"issupercomponent": false,
-		"moddate": "2018-10-14 11:57:18",
+		"moddate": "2018-10-18 22:29:01",
 		"selfcontained": false,
 		"showascheckedout": false,
 		"userinfo": "",

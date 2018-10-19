@@ -1,10 +1,10 @@
 {
 	"omnisversion": "8.1.6",
 	"includes": [
-
+		"OMNISTAP"
 	],
 	"properties": {
-		"extension": false,
+		"extension": true,
 		"ignoreexternal": false,
 		"nodebug": false,
 		"userinfo": "",

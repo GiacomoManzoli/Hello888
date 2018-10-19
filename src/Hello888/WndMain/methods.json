@@ -8,6 +8,20 @@
 		],
 		"lvardefs": [
 			{
+				"name": "lcCompanyName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lcOmnisVersion",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
 				"name": "oMessage",
 				"order": 1,
 				"type": "kObject",

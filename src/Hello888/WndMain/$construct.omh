@@ -1,2 +1,4 @@
 ;  Enter your initialization code here
-Do oMessage.$getMessage() Returns icMessage
+Calculate lcCompanyName as sys(3)
+Calculate lcOmnisVersion as sys(1)
+Do oMessage.$getMessage(lcCompanyName,lcOmnisVersion) Returns icMessage

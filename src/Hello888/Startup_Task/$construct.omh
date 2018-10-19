@@ -1,1 +1,2 @@
-Do $windows.WndMain.$open()
+Do inherited
+Do $cinst.$processCLI()

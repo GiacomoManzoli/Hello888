@@ -1,0 +1,20 @@
+{
+	"classtype": "kSchema",
+	"internalversion": 2,
+	"nextident": 32001,
+	"properties": {
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-10-17 21:34:09",
+		"createinstancewhensubtype": true,
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"moddate": "2018-10-17 21:34:10",
+		"servertablename": "",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

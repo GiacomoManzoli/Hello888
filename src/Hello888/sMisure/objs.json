@@ -1,0 +1,58 @@
+[
+	{
+		"name": "Altezza",
+		"ident": 32002,
+		"order": 1,
+		"type": "kNumber",
+		"subtype": "kFloatdp",
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Larghezza",
+		"ident": 32003,
+		"order": 2,
+		"type": "kNumber",
+		"subtype": "kFloatdp",
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Spessore",
+		"ident": 32004,
+		"order": 3,
+		"type": "kNumber",
+		"subtype": "kFloatdp",
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "PartiSimili",
+		"ident": 32005,
+		"order": 4,
+		"type": "kNumber",
+		"subtype": "kFloatdp",
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	}
+]

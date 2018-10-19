@@ -1,0 +1,100 @@
+[
+	{
+		"name": "$totaleMisura",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pbIgnoreZero",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "%%s",
+				"order": 10,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lnAltezza",
+				"order": 4,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			},
+			{
+				"name": "lnLarghezza",
+				"order": 5,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			},
+			{
+				"name": "lnLine",
+				"order": 8,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			},
+			{
+				"name": "lnPartiSimili",
+				"order": 7,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			},
+			{
+				"name": "lnResult",
+				"order": 3,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			},
+			{
+				"name": "lnSpessore",
+				"order": 6,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			},
+			{
+				"name": "lvCurrentRow",
+				"order": 9,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvMisuraRow",
+				"order": 2,
+				"type": "kRow",
+				"subtype": "tMisure",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$isEmpty",
+		"ident": 1,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lnCountEmpty",
+				"order": 1,
+				"type": "kNumber",
+				"subtype": "kFloatdp",
+				"sublen": 0
+			}
+		]
+	}
+]

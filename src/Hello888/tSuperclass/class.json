@@ -1,0 +1,34 @@
+{
+	"classtype": "kTable",
+	"internalversion": 4,
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "irMe",
+			"order": 1,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"desc": "Riferimento a me medesimo"
+		}
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2018-10-17 20:47:21",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"moddate": "2018-10-17 22:48:10",
+		"showascheckedout": false,
+		"sqlclassname": "",
+		"userinfo": "",
+		"version": ""
+	}
+}

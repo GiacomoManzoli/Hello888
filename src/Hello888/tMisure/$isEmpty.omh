@@ -1,0 +1,15 @@
+Calculate lnCountEmpty as 0
+If isclear($cinst.Altezza)     ;; $cinst.Altezza=0|isnull($cinst.Altezza)
+	Calculate lnCountEmpty as lnCountEmpty+1
+End If
+If isclear($cinst.Spessore)     ;; $cinst.Altezza=0|isnull($cinst.Altezza)
+	Calculate lnCountEmpty as lnCountEmpty+1
+End If
+If isclear($cinst.Larghezza)     ;; $cinst.Altezza=0|isnull($cinst.Altezza)
+	Calculate lnCountEmpty as lnCountEmpty+1
+End If
+If isclear($cinst.PartiSimili)     ;; $cinst.Altezza=0|isnull($cinst.Altezza)
+	Calculate lnCountEmpty as lnCountEmpty+1
+End If
+
+Quit method lnCountEmpty=4

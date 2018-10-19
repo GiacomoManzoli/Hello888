@@ -26,26 +26,27 @@
 		"ident": 0,
 		"order": 3,
 		"pvardefs": [
-
-		],
-		"lvardefs": [
 			{
-				"name": "lcCompanyName",
+				"name": "pcCompanyName",
 				"order": 2,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
-				"sublen": 100000000
+				"sublen": 100000000,
+				"param": 1
 			},
+			{
+				"name": "pcOmnisVersion",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
 			{
 				"name": "lcMessage",
 				"order": 1,
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			},
-			{
-				"name": "lcOmnisVersion",
-				"order": 3,
 				"type": "kCharacter",
 				"subtype": "kSimplechar",
 				"sublen": 100000000

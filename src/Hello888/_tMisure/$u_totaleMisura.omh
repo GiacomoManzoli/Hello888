@@ -55,7 +55,7 @@ Do lvMisureList.$add(1,8,1/7,0)
 
 Do lvMisureList.$totaleMisura(kTrue) Returns lnRes
 Calculate lnExpected as 1+1+(1*8*1/7)
-Do ioTAP.$is_number(lnRes,lnExpected,'Il totale di una lista è la somma dei totali')
+Do ioTAP.$is_number(lnRes,lnExpected,'Il totale di una lista e'' la somma dei totali')
 
 Do lvMisureList.$add(0,0,0,0)
 Do lvMisureList.$totaleMisura(kTrue) Returns lnRes

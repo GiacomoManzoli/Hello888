@@ -4,7 +4,7 @@ Calculate lvMisuraRow.Spessore as 0
 Calculate lvMisuraRow.PartiSimili as 0
 
 Do lvMisuraRow.$totaleMisura(kTrue) Returns lnResult
-Do ioTAP.$is_number(lnResult,0,'Con "ignora 0" attivo il risultato dovrebbe essere 1 se c''è uno 0')
+Do ioTAP.$is_number(lnResult,0,'Con "ignora 0" attivo il risultato dovrebbe essere 1 se c''e'' uno 0')
 
 Calculate lvMisuraRow.Altezza as 0
 Calculate lvMisuraRow.Larghezza as 0
@@ -12,14 +12,14 @@ Calculate lvMisuraRow.Spessore as 0
 Calculate lvMisuraRow.PartiSimili as 1
 
 Do lvMisuraRow.$totaleMisura(kTrue) Returns lnResult
-Do ioTAP.$is_number(lnResult,1,'Con "ignora 0" attivo il risultato dovrebbe essere 1 se c''è uno 0')
+Do ioTAP.$is_number(lnResult,1,'Con "ignora 0" attivo il risultato dovrebbe essere 1 se c''e'' uno 0')
 
 Calculate lvMisuraRow.Altezza as 0
 Calculate lvMisuraRow.Larghezza as 0
 Calculate lvMisuraRow.Spessore as 0
 Calculate lvMisuraRow.PartiSimili as 1
 Do lvMisuraRow.$totaleMisura(kFalse) Returns lnResult
-Do ioTAP.$is_number(lnResult,0,'Con "ignora 0" non attivo il risultato dovrebbe essere 0 se c''è uno 0')
+Do ioTAP.$is_number(lnResult,0,'Con "ignora 0" non attivo il risultato dovrebbe essere 0 se c''e'' uno 0')
 
 Calculate lvMisuraRow.Altezza as 10
 Calculate lvMisuraRow.Larghezza as 1/7

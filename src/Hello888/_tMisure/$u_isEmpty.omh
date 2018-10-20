@@ -4,7 +4,7 @@ Calculate lvMisuraRow.Spessore as 0
 Calculate lvMisuraRow.PartiSimili as 0
 
 Do lvMisuraRow.$isEmpty() Returns lbRes
-Do ioTAP.$is_boolean(lbRes,kTrue,'Una riga con solo 0 è vuota')
+Do ioTAP.$is_boolean(lbRes,kTrue,'Una riga con solo 0 e'' vuota')
 
 Calculate lvMisuraRow.Altezza as #NULL
 Calculate lvMisuraRow.Larghezza as #NULL
@@ -12,7 +12,7 @@ Calculate lvMisuraRow.Spessore as #NULL
 Calculate lvMisuraRow.PartiSimili as #NULL
 
 Do lvMisuraRow.$isEmpty() Returns lbRes
-Do ioTAP.$is_boolean(lbRes,kTrue,'Una riga con solo #NULL è vuota')
+Do ioTAP.$is_boolean(lbRes,kTrue,'Una riga con solo #NULL e'' vuota')
 
 Calculate lvMisuraRow.Altezza as #NULL
 Calculate lvMisuraRow.Larghezza as 1
@@ -20,4 +20,4 @@ Calculate lvMisuraRow.Spessore as #NULL
 Calculate lvMisuraRow.PartiSimili as #NULL
 
 Do lvMisuraRow.$isEmpty() Returns lbRes
-Do ioTAP.$is_boolean(lbRes,kFalse,'Una riga con almeno un elemnto diverso a 0 o #NULL non è vuota')
+Do ioTAP.$is_boolean(lbRes,kFalse,'Una riga con almeno un elemnto diverso a 0 o #NULL non e'' vuota')

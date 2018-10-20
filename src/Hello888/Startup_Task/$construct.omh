@@ -1,2 +1,5 @@
 Do inherited
-Do $cinst.$processCLI()
+Do $cinst.$processCLI() Returns lbCLIRun
+If lbCLIRun=kTrue
+	Quit method
+End If

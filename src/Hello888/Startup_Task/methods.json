@@ -7,18 +7,13 @@
 
 		],
 		"lvardefs": [
-
-		]
-	},
-	{
-		"name": "$_getCLIObjectClass",
-		"ident": 1,
-		"order": 2,
-		"pvardefs": [
-
-		],
-		"lvardefs": [
-
+			{
+				"name": "lbCLIRun",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
 		]
 	}
 ]
